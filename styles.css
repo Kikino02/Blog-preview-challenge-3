@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+/* Custom Variables*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(47, 88%, 63%);
+}
+
+.container {
+  padding: 24px;
+  max-width: 330px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid black;
+  box-shadow: 8px 8px 0px black;
+  transition: 0.3s ease;
+}
+.container:hover {
+  box-shadow: 12px 12px 0px black;
+}
+.container .top__img {
+  border-radius: 16px;
+}
+.container .main__text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container .main__text .main__text-bg {
+  background-color: hsl(47, 88%, 63%);
+  width: -moz-min-content;
+  width: min-content;
+  font-weight: 900;
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+.container .main__text .main__subtitle {
+  color: hsl(0, 0%, 7%);
+  font-size: 12px;
+}
+.container .main__text .main__title {
+  font-size: 20px;
+  font-weight: 900;
+  transition: 0.3s ease;
+}
+.container .main__text .main__title:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+.container .main__text .main__description {
+  font-size: 15px;
+  color: hsl(0, 0%, 50%);
+  max-width: 60ch;
+  line-height: 1.5;
+}
+.container .main__profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.container .main__profile .profile__img {
+  width: 32px;
+  height: 32px;
+}
+.container .main__profile .profile__name {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 400px;
+  }
+  .container .main__text .main__text-bg {
+    font-size: 16px;
+  }
+  .container .main__text .main__subtitle {
+    font-size: 16px;
+  }
+  .container .main__text .main__title {
+    font-size: 24px;
+  }
+  .container .main__text .main__description {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=styles.css.map */
